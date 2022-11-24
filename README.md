@@ -31,7 +31,11 @@ cd instance-digitalocean
 cat <<EOF >> terraform.tfvars
 private_key   = "<PATH TO YOUR PUBLIC KEY>"
 public_key   = "<PATH TO YOUR PRIVATE KEY>"
-api_token = "<DIGITAL OCEAN API TOKEN>" # Create one via https://cloud.digitalocean.com/account/api/tokens
+api_token = "<DIGITAL OCEAN API TOKEN>" # CloudFlare Api Token created at https://dash.cloudflare.com/profile/api-tokens
+# Required permissions:
+#   - Zone: Zone / Edit
+#   - Zone: Zone Setting / Edit
+#   - Zone: DNS / Edit
 EOF
 
 terraform init

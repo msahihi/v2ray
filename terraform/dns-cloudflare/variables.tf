@@ -2,7 +2,7 @@ variable "api_token"{
   type = string
   description = <<EOT
   CloudFlare Api Token created at https://dash.cloudflare.com/profile/api-tokens
-  Required permission: 
+  Required permissions:
    - Zone: Zone / Edit
    - Zone: Zone Setting / Edit
    - Zone: DNS / Edit
